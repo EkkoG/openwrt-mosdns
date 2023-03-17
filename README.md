@@ -3,7 +3,6 @@ A [mosdns](https://github.com/IrineSistiana/mosdns) OpenWrt package.
 ## Build
 
 ```
-# 以 ar71xx 平台为例
 tar xjf openwrt-sdk-22.03.3-x86-64_gcc-11.2.0_musl.Linux-x86_64.tar.xz
 cd OpenWrt-SDK-22.03.3-x86-64_gcc-11.2.0_musl.Linux-x86_64
 git clone https://github.com/EkkoG/openwrt-mosdns.git ekko/mosdns
