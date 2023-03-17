@@ -4,17 +4,10 @@ A [mosdns](https://github.com/IrineSistiana/mosdns) OpenWrt package.
 
 ```
 # 以 ar71xx 平台为例
-tar xjf OpenWrt-SDK-ar71xx-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
-cd OpenWrt-SDK-ar71xx-*
+tar xjf openwrt-sdk-22.03.3-x86-64_gcc-11.2.0_musl.Linux-x86_64.tar.xz
+cd OpenWrt-SDK-22.03.3-x86-64_gcc-11.2.0_musl.Linux-x86_64
 git clone https://github.com/EkkoG/openwrt-mosdns.git ekko/mosdns
-cp feeds.conf.default feeds.conf
-echo "src-link ekko $(pwd)/ekko" >> feeds.conf
-./scripts/feeds update mosdns
-./scripts/feeds install -a -p ekko
-make defconfig
-make package/mosdns/download V=s
-make package/mosdns/check V=s
-make package/mosdns/compile V=s
+./build.sh
 ```
 
 Or use docker to build:
