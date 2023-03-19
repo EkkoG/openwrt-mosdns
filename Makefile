@@ -48,6 +48,7 @@ endif
 # endif
 ifeq ($(ARCH),aarch64)
 	PKG_ARCH:=arm64
+	PKG_HASH:=$(PKG_HASH_ARM_64)
 endif
 PKG_SOURCE:=mosdns-linux-$(PKG_ARCH).zip
 PKG_SOURCE_URL:=https://github.com/IrineSistiana/mosdns/releases/download/v$(PKG_VERSION)/
