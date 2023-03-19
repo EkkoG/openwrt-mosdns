@@ -77,7 +77,7 @@ define Package/mosdns/description
 endef
 
 define Build/Prepare
-	unzip $(DL_DIR)/$(PKG_SOURCE) -d $(DL_DIR)/mosdns
+	unzip -o $(DL_DIR)/$(PKG_SOURCE) -d $(DL_DIR)/mosdns
 endef
 
 define Build/Compile
